@@ -51,7 +51,7 @@ public class Main {
             System.out.println("Rede Mundial de Computadores");
             System.out.println("Menu:");
             System.out.println("1 Busca em Largura\t\t\t\t\t\t2 Busca em Profundidade");
-            System.out.println("3 Menor Distância entre duas cidades\t4 Sair");
+            System.out.println("3 Menor Distância entre duas cidades");
 
             System.out.print("Escolha uma opção: ");
             String opcao = sc.nextLine().trim();
@@ -74,16 +74,10 @@ public class Main {
                     String destino = sc.nextLine();
                     grafo.menorDistancia(origem, destino);
                     break;
-                case "4":
-                    continuar = false;
-                    System.out.println("Programa encerrado.");
-                    break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
                     continue;
             }
-
-            if (!continuar) break;
 
             String resposta = "";
             while (true) {
